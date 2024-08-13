@@ -2,7 +2,7 @@ import React from 'react';
 import {useTelegram} from "../../hooks/useTelegram";
 
 const Header = () => {
-    const{user,onclose} = useTelegram();
+    const{user,onClose} = useTelegram();
 
 
     return (
@@ -12,8 +12,7 @@ const Header = () => {
                 {user?.username}
             </span>
         </div>
-    )
-        ;
+    );
 };
 
 export default Header;
